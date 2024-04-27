@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Change">
+        <menu>
+            <item
+                android:id="@+id/rRadius"
+                android:title="Zero Radius" />
+            <item
+                android:id="@+id/mItemChange"
+                android:title="Random Size" />
+            <item
+                android:id="@+id/mRandomColor"
+                android:title="Random Color" />
+            <item
+                android:id="@+id/mSpin"
+                android:title="Spin" />
+            <item
+                android:id="@+id/mStop"
+                android:title="Stop Animation" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/mItemReset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/mItemExit"
+        android:title="Exit" />
+</menu>
