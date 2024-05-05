@@ -16,7 +16,7 @@ import com.example.androidprojectcollection.GenshinCrush.GenshinCrush;
 import java.util.Random;
 
 public class LayoutExercise extends AppCompatActivity {
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btnjinshin, btnMiterm, btnPassIntent, btnMenu;
+    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btnjinshin, btnMiterm, btnPassIntent, btnMenu, btnOpeningMaps;
     Boolean iscolor = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,11 @@ public class LayoutExercise extends AppCompatActivity {
         ConstraintLayout constraintLayout = findViewById(R.id.clChangeColor);
         btnPassIntent = findViewById(R.id.btnPassIntent);
         btnMenu = findViewById(R.id.btnMenu);
+        btnOpeningMaps = findViewById(R.id.btnOpeningMaps);
+        btnOpeningMaps.setOnClickListener((view)->{
+            Intent intent = new Intent(LayoutExercise.this, MapsActivity.class);
+            startActivity(intent);
+        });
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
